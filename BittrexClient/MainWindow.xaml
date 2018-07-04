@@ -8,23 +8,32 @@
         Title="MainWindow" Height="801.681" Width="800">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="751" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" TabStripPlacement="Left">
-            <TabItem Header="Markets" IsEnabled="False">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
             <TabItem Header="Wallets" IsEnabled="False">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Your wallets:" HorizontalAlignment="Left" Margin="51,50,0,0" VerticalAlignment="Top"/>
+                    <DataGrid HorizontalAlignment="Left" Height="164" Margin="10,96,0,0" VerticalAlignment="Top" Width="506"/>
+                </Grid>
             </TabItem>
             <TabItem Header="Settings" IsEnabled="False">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Market:" HorizontalAlignment="Left" Margin="75,18,0,0" VerticalAlignment="Top"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="156,22,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Fav Currencies" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
+                    <DataGrid HorizontalAlignment="Left" Height="211" Margin="10,121,0,0" VerticalAlignment="Top" Width="414"/>
+
+                </Grid>
             </TabItem>
             <TabItem Header="User">
                 <Grid Background="#FFE5E5E5">
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="186,15,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="186,43,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="186,71,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="186,99,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,84,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,112,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,140,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,168,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <Label Content="API Key" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                    <Button Content="Save" HorizontalAlignment="Left" Margin="121,157,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Content="Save" HorizontalAlignment="Left" Margin="106,226,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Label Content="ReadKey" HorizontalAlignment="Left" Margin="69,84,0,0" VerticalAlignment="Top"/>
+                    <Label Content="TradeLimitKey" HorizontalAlignment="Left" Margin="69,112,0,0" VerticalAlignment="Top"/>
+                    <Label Content="WithdrawKey" HorizontalAlignment="Left" Margin="69,168,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
         </TabControl>

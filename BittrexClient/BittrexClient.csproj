@@ -66,6 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="Apis\AccountApi.cs" />
     <Compile Include="Handlers\ConnectionHandler.cs" />
+    <Compile Include="Handlers\SettingsHandler.cs" />
     <Compile Include="Models\Currency.cs" />
     <Compile Include="Handlers\JsonHandler.cs" />
     <Compile Include="Apis\MarketApi.cs" />
