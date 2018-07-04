@@ -64,16 +64,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AccountApi.cs" />
-    <Compile Include="ConnectionHandler.cs" />
-    <Compile Include="Currency.cs" />
-    <Compile Include="JsonHandler.cs" />
-    <Compile Include="MarketApi.cs" />
-    <Compile Include="MarketSummary.cs" />
-    <Compile Include="OrderBook.cs" />
-    <Compile Include="PublicApi.cs" />
-    <Compile Include="Response.cs" />
-    <Compile Include="Ticker.cs" />
+    <Compile Include="Apis\AccountApi.cs" />
+    <Compile Include="Handlers\ConnectionHandler.cs" />
+    <Compile Include="Models\Currency.cs" />
+    <Compile Include="Handlers\JsonHandler.cs" />
+    <Compile Include="Apis\MarketApi.cs" />
+    <Compile Include="Models\MarketSummary.cs" />
+    <Compile Include="Models\OrderBook.cs" />
+    <Compile Include="Apis\PublicApi.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\Ticker.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -88,7 +88,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Market.cs" />
+    <Compile Include="Models\Market.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
