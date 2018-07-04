@@ -66,6 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="Apis\AccountApi.cs" />
     <Compile Include="Handlers\ConnectionHandler.cs" />
+    <Compile Include="Handlers\FileHandler.cs" />
     <Compile Include="Handlers\SettingsHandler.cs" />
     <Compile Include="Models\Currency.cs" />
     <Compile Include="Handlers\JsonHandler.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Models\OrderBook.cs" />
     <Compile Include="Apis\PublicApi.cs" />
     <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\Settings.cs" />
     <Compile Include="Models\Ticker.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

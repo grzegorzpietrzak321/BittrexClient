@@ -25,15 +25,18 @@
             </TabItem>
             <TabItem Header="User">
                 <Grid Background="#FFE5E5E5">
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,84,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,112,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,140,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,168,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <Label Content="API Key" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                    <Button Content="Save" HorizontalAlignment="Left" Margin="106,226,0,0" VerticalAlignment="Top" Width="75"/>
-                    <Label Content="ReadKey" HorizontalAlignment="Left" Margin="69,84,0,0" VerticalAlignment="Top"/>
-                    <Label Content="TradeLimitKey" HorizontalAlignment="Left" Margin="69,112,0,0" VerticalAlignment="Top"/>
-                    <Label Content="WithdrawKey" HorizontalAlignment="Left" Margin="69,168,0,0" VerticalAlignment="Top"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="6*"/>
+                        <RowDefinition Height="143*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,54,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,82,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="171,110,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+                    <Label Content="API Key" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
+                    <Button Content="Save" HorizontalAlignment="Left" Margin="106,196,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1"/>
+                    <Label Content="ReadKey" HorizontalAlignment="Left" Margin="69,54,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+                    <Label Content="TradeLimitKey" HorizontalAlignment="Left" Margin="69,82,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+                    <Label Content="WithdrawKey" HorizontalAlignment="Left" Margin="69,110,0,0" VerticalAlignment="Top" Grid.Row="1"/>
                 </Grid>
             </TabItem>
         </TabControl>
